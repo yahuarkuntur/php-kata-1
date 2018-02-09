@@ -8,13 +8,20 @@
 class NumerosRomanos
 {
 	/**
-	 * 
-	 * @param int $argument1
+	 * Metodo para convertir un numero entero en numero Romano.
+	 * @param int $numero
+	 * @return string
 	 */
     public function convertir($numero)
     {
-        // TODO: write logic here
-        return 'I';
+    	switch($numero) {
+    		case 1:
+    			return 'I';
+    		case 2:
+    			return 'II';
+    		default:
+    			return null;
+    	}
     }
     
 }

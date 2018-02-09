@@ -17,4 +17,9 @@ class NumerosRomanosSpec extends ObjectBehavior
     {
     	$this->convertir(1)->shouldReturn('I');	
     }
+    
+    function it_convertir_numero_2()
+    {
+    	$this->convertir(2)->shouldReturn('II');
+    }
 }
