@@ -22,4 +22,9 @@ class NumerosRomanosSpec extends ObjectBehavior
     {
     	$this->convertir(2)->shouldReturn('II');
     }
+    
+    function it_convertir_numero_3()
+    {
+    	$this->convertir(3)->shouldReturn('III');
+    }
 }
