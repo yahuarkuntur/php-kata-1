@@ -63,4 +63,9 @@ class NumerosRomanosSpec extends ObjectBehavior
     	$this->convertir(9)->shouldReturn('IX');
     }
     
+    function it_obtener_decena_10()
+    {
+    	$this->obtener_decena(10)->shouldReturn(1);
+    }    
+    
 }

@@ -29,7 +29,7 @@ class NumerosRomanos
     }
     
     
-    public function incremento($incremento)
+    protected function incremento($incremento)
     {
     	switch($incremento) {
     		case 1:
@@ -43,7 +43,7 @@ class NumerosRomanos
     	}
     }
     
-    public function decremento($decremento)
+    protected function decremento($decremento)
     {
     	switch($decremento) {
     		case 1:
@@ -55,6 +55,10 @@ class NumerosRomanos
     		default:
     			return null;
     	}
+    }
+    
+    public function obtener_decena($numero) {
+    	return $numero / 10;
     }
     
 }
