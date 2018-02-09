@@ -58,4 +58,9 @@ class NumerosRomanosSpec extends ObjectBehavior
     	$this->convertir(10)->shouldReturn('X');
     }
     
+    function it_convertir_numero_9()
+    {
+    	$this->convertir(9)->shouldReturn('IX');
+    }
+    
 }
