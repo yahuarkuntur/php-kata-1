@@ -25,6 +25,8 @@ class NumerosRomanos
     			return 'V' . $this->incremento($numero - 5);
     		case 4:
     			return $this->decremento(5 - $numero) . 'V';
+    		case 10:
+    			return 'X';
     		default:
     			return null;
     	}
