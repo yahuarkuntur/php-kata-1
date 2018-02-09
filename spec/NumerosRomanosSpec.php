@@ -27,4 +27,25 @@ class NumerosRomanosSpec extends ObjectBehavior
     {
     	$this->convertir(3)->shouldReturn('III');
     }
+    
+    function it_convertir_numero_5()
+    {
+    	$this->convertir(5)->shouldReturn('V');
+    }
+    
+    function it_convertir_numero_6()
+    {
+    	$this->convertir(6)->shouldReturn('VI');
+    }
+    
+    function it_convertir_numero_7()
+    {
+    	$this->convertir(7)->shouldReturn('VII');
+    }
+    
+    function it_convertir_numero_8()
+    {
+    	$this->convertir(8)->shouldReturn('VIII');
+    }   
+    
 }
