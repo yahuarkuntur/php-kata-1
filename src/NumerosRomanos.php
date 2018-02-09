@@ -22,16 +22,32 @@ class NumerosRomanos
     		case 3:
     			return 'III';
     		case 5: case 6: case 7: case 8:
-    			return 'V' . $this->incremento_derecho($numero - 5);
+    			return 'V' . $this->incremento($numero - 5);
+    		case 4:
+    			return $this->decremento(5 - $numero) . 'V';
     		default:
     			return null;
     	}
     }
     
     
-    public function incremento_derecho($incremento)
+    public function incremento($incremento)
     {
     	switch($incremento) {
+    		case 1:
+    			return 'I';
+    		case 2:
+    			return 'II';
+    		case 3:
+    			return 'III';
+    		default:
+    			return null;
+    	}
+    }
+    
+    public function decremento($decremento)
+    {
+    	switch($decremento) {
     		case 1:
     			return 'I';
     		case 2:

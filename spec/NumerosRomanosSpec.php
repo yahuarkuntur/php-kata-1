@@ -46,6 +46,11 @@ class NumerosRomanosSpec extends ObjectBehavior
     function it_convertir_numero_8()
     {
     	$this->convertir(8)->shouldReturn('VIII');
-    }   
+    }
+    
+    function it_convertir_numero_4()
+    {
+    	$this->convertir(4)->shouldReturn('IV');
+    }
     
 }
