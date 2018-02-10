@@ -138,4 +138,9 @@ class NumerosRomanosSpec extends ObjectBehavior
     	$this->convertir(944)->shouldReturn('CMXLIV');
     }
     
+    function it_convertir_numero_1001()
+    {
+    	$this->convertir(1001)->shouldReturn('MI');
+    }
+    
 }

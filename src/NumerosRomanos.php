@@ -16,6 +16,8 @@ class NumerosRomanos
     {
     	if ( $numero >= 1000 ) {
     		$mil = $this->obtener_mil($numero);
+    		$centena = $this->obtener_centena($numero - $mil);
+    		$decena = $this->obtener_decena($numero - $centena);
     		return $this->miles($mil) . $this->centenas($centena) . $this->decenas($decena) . $this->numeros_base($numero-$decena);
     	}
     	
@@ -111,6 +113,14 @@ class NumerosRomanos
    				return 'CM';
    			case 1000:
    				return 'M';
+    	}
+    }
+    
+    protected function miles($numero)
+    {
+    	switch($numero) {
+    		case 1000:
+    			return 'M';
     	}
     }
     
