@@ -65,7 +65,52 @@ class NumerosRomanosSpec extends ObjectBehavior
     
     function it_obtener_decena_10()
     {
-    	$this->obtener_decena(10)->shouldReturn(1);
-    }    
+    	$this->obtener_decena(10)->shouldReturn(10);
+    }
+    
+    function it_obtener_decena_20()
+    {
+    	$this->obtener_decena(20)->shouldReturn(20);
+    }
+    
+    function it_obtener_decena_11()
+    {
+    	$this->obtener_decena(11)->shouldReturn(10);
+    }
+    
+    function it_convertir_numero_11()
+    {
+    	$this->convertir(11)->shouldReturn('XI');
+    }
+    
+    function it_convertir_numero_12()
+    {
+    	$this->convertir(12)->shouldReturn('XII');
+    }
+    
+    function it_convertir_numero_13()
+    {
+    	$this->convertir(13)->shouldReturn('XIII');
+    }
+    
+    function it_obtener_centena_100()
+    {
+    	$this->obtener_centena(100)->shouldReturn(100);
+    }
+    
+    function it_obtener_centena_200()
+    {
+    	$this->obtener_centena(200)->shouldReturn(200);
+    }
+    
+    function it_obtener_centena_110()
+    {
+    	$this->obtener_centena(110)->shouldReturn(100);
+    }
+    
+    function it_convertir_numero_50()
+    {
+    	$this->convertir(50)->shouldReturn('L');
+    }
     
 }
