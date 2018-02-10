@@ -128,4 +128,9 @@ class NumerosRomanosSpec extends ObjectBehavior
     	$this->convertir(84)->shouldReturn('LXXXIV');
     }
     
+    function it_convertir_numero_741()
+    {
+    	$this->convertir(741)->shouldReturn('DCCXLI');
+    }
+    
 }
