@@ -113,4 +113,14 @@ class NumerosRomanosSpec extends ObjectBehavior
     	$this->convertir(50)->shouldReturn('L');
     }
     
+    function it_convertir_numero_33()
+    {
+    	$this->convertir(33)->shouldReturn('XXXIII');
+    }
+    
+    function it_convertir_numero_555()
+    {
+    	$this->convertir(555)->shouldReturn('DLV');
+    }
+    
 }

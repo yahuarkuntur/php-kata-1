@@ -21,7 +21,8 @@ class NumerosRomanos
     	
     	if ( $numero >= 100 ) {
     		$centena = $this->obtener_centena($numero);
-    		return $this->centenas($centena) . $this->decenas($decena) . $this->numeros_base($numero-$decena);
+    		$decena = $this->obtener_decena($numero - $centena);
+    		return $this->centenas($centena) . $this->decenas($decena) . $this->numeros_base($numero-$decena-$centena);
     	}
     	
     	if ( $numero >= 10 ) {
@@ -87,7 +88,7 @@ class NumerosRomanos
     }
     
     
-    protected function miles($numero)
+    protected function centenas($numero)
     {
     	switch($numero) {
     		case 100:
