@@ -33,4 +33,33 @@ class NumerosArabigosSpec extends ObjectBehavior
     	$this->convertir('IV')->shouldReturn(4);
     }
     
+    function it_convertir_numero_V()
+    {
+    	$this->convertir('V')->shouldReturn(5);
+    }
+    
+    function it_convertir_numero_VI()
+    {
+    	$this->convertir('VI')->shouldReturn(6);
+    }
+    
+    function it_convertir_numero_VII()
+    {
+    	$this->convertir('VII')->shouldReturn(7);
+    } 
+    
+    function it_convertir_numero_VIII()
+    {
+    	$this->convertir('VIII')->shouldReturn(8);
+    }
+    
+    function it_convertir_numero_IX()
+    {
+    	$this->convertir('IX')->shouldReturn(9);
+    }
+    
+    function it_convertir_numero_X()
+    {
+    	$this->convertir('X')->shouldReturn(10);
+    }    
 }
