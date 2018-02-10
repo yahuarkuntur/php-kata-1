@@ -11,7 +11,9 @@ class NumerosArabigos
 	{
 		switch($numero) { 
 			case 'I':
-				return 1;			
+				return 1;
+			case 'II':
+				return 2;
 		}
 	}
 }
