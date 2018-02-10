@@ -22,4 +22,15 @@ class NumerosArabigosSpec extends ObjectBehavior
     {
     	$this->convertir('II')->shouldReturn(2);
     }
+    
+    function it_convertir_numero_III()
+    {
+    	$this->convertir('III')->shouldReturn(3);
+    }
+    
+    function it_convertir_numero_IV()
+    {
+    	$this->convertir('IV')->shouldReturn(4);
+    }
+    
 }
