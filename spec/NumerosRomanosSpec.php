@@ -143,4 +143,9 @@ class NumerosRomanosSpec extends ObjectBehavior
     	$this->convertir(1001)->shouldReturn('MI');
     }
     
+    function it_convertir_numero_1999()
+    {
+    	$this->convertir(1999)->shouldReturn('MCMXCIX');
+    }
+    
 }

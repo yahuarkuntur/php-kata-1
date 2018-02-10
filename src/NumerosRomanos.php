@@ -17,8 +17,8 @@ class NumerosRomanos
     	if ( $numero >= 1000 ) {
     		$mil = $this->obtener_mil($numero);
     		$centena = $this->obtener_centena($numero - $mil);
-    		$decena = $this->obtener_decena($numero - $centena);
-    		return $this->miles($mil) . $this->centenas($centena) . $this->decenas($decena) . $this->numeros_base($numero-$decena);
+    		$decena = $this->obtener_decena($numero - $mil - $centena);
+    		return $this->miles($mil) . $this->centenas($centena) . $this->decenas($decena) . $this->numeros_base($numero-$mil-$decena-$centena);
     	}
     	
     	if ( $numero >= 100 ) {
@@ -33,8 +33,7 @@ class NumerosRomanos
     	}
     	
    		return $this->numeros_base($numero);
-    }
-    
+    }    
     
     protected function numeros_base($numero)
     {
@@ -60,8 +59,7 @@ class NumerosRomanos
     		case 10:
     			return 'X';
     	}
-    }
-    
+    }    
     
     protected function decenas($numero)
     {
@@ -87,8 +85,7 @@ class NumerosRomanos
    			case 100:
    				return 'C';
     	}
-    }
-    
+    }    
     
     protected function centenas($numero)
     {
@@ -122,8 +119,7 @@ class NumerosRomanos
     		case 1000:
     			return 'M';
     	}
-    }
-    
+    }    
     
     public function obtener_decena($numero) {
     	return (int) ($numero / 10) * 10;
